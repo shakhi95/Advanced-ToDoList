@@ -17,7 +17,7 @@ class UI {
     this.mode.setAttribute("src", "./images/icon-moon.svg");
     this.mode.classList.add("sun");
     this.body.style.backgroundColor = "hsl(0, 0%, 98%)";
-    this.body.style.backgroundImage = "url(./images/bg-desktop-light.jpg)";
+    this.body.className = "body-light";
 
     this.tasksBox.style.backgroundColor = "white";
   }
@@ -26,7 +26,7 @@ class UI {
     this.mode.setAttribute("src", "./images/icon-sun.svg");
     this.mode.classList.remove("sun");
     this.body.style.backgroundColor = "hsl(237, 14%, 26%)";
-    this.body.style.backgroundImage = "url(./images/bg-desktop-dark.jpg)";
+    this.body.className = "body-dark";
 
     this.tasksBox.style.backgroundColor = "rgb(223, 217, 217)";
   }

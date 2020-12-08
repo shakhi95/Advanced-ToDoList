@@ -19,9 +19,16 @@
 
 body {
   background-color: hsl(0, 0%, 98%);
-  background-image: url(../images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.body-light {
+  background-image: url(../images/bg-desktop-light.jpg);
+}
+
+.body-dark {
+  background-image: url(../images/bg-desktop-dark.jpg);
 }
 
 .container {
