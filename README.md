@@ -7,6 +7,7 @@ Beautiful & Responsive TO-DO List!
 
 
 Features: 
+-rtl [Persian]
 - Light/Dark Mode Switch 
 - Use of Local Storage
 
