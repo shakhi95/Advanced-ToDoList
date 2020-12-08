@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IRANSansWeb.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(../images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  width: 100%;
+
+  font-family: "IranSans";
+  text-align: right;
+  direction: rtl;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle .title-box {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.middle .title-box h1 {
+  color: hsl(0, 0%, 98%);
+}
+
+.middle .title-box img:hover {
+  cursor: pointer;
+}
+.middle .input-box {
+  width: 100%;
+  background-color: white;
+  padding: 0.8rem;
+  border-radius: 5px;
+
+  border: 1px solid whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.middle .input-box input[type="text"] {
+  font-family: "IranSans";
+  width: 80%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+.middle .input-box input[type="submit"] {
+  font-family: "IranSans";
+  text-align: center;
+  width: 20%;
+  height: 20%;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-right: 1px solid black;
+  cursor: pointer;
+}
+
+.middle .input-box input[type="submit"]:hover {
+  font-weight: bolder;
+}
+
+.middle .mssg {
+  border-radius: 10px;
+  margin: 0 0 0.5rem 0;
+  padding: 0.1rem 1rem;
+  color: white;
+  font-size: small;
+  visibility: hidden;
+}
+
+.middle .tasks-box {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.73);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle .tasks-box .done p {
+  text-decoration: line-through;
+  color: rgb(110, 109, 109);
+}
+
+.middle .tasks-box .task-row {
+  border-bottom: 1px solid hsl(0, 1%, 77%);
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle .tasks-box .task-row p {
+  font-size: 0.9rem;
+}
+
+.middle .tasks-box .task-row div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.middle .tasks-box .task-row .state {
+  margin-left: 0.5rem;
+  color: rgb(200, 206, 212);
+}
+
+.middle .tasks-box .task-row .delete {
+  display: none;
+  color: rgb(228, 158, 158);
+  margin-right: 0.5rem;
+}
+
+.middle .tasks-box .task-row:hover .state {
+  color: rgb(94, 170, 245);
+}
+
+.middle .tasks-box .task-row:hover .delete {
+  display: block;
+}
+
+.middle .tasks-box .task-row .state:hover {
+  cursor: pointer;
+  text-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  color: blue;
+}
+
+.middle .tasks-box .task-row .delete:hover {
+  cursor: pointer;
+  text-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  color: rgb(192, 64, 64);
+}
+
+.middle .tasks-box .group {
+  border-bottom: 1px solid hsl(0, 1%, 77%);
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: small;
+}
+
+.middle .tasks-box .group small {
+  padding: 0 1rem;
+  color: hsl(0, 1%, 51%);
+  cursor: pointer;
+}
+
+.middle .tasks-box .group small:hover {
+  color: hsl(0, 0%, 0%);
+}
+
+.middle .tasks-box .group .active {
+  color: hsl(235, 100%, 50%);
+  font-weight: bold;
+}
+
+.middle .tasks-box .group .active:hover {
+  color: hsl(235, 100%, 50%);
+}
+
+.middle .tasks-box .info {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle .tasks-box .info #clear-tasks {
+  background-color: red;
+  color: aliceblue;
+  border-radius: 1rem;
+  padding: 0.1rem 1rem;
+}
+
+.middle .tasks-box .info #clear-tasks:hover {
+  cursor: pointer;
+  /* background-color: rgb(177, 38, 38); */
+  box-shadow: 5px 5px 12px -4px #000000;
+}
+
+@media (max-width: 800px) {
+  .middle {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .middle {
+    width: 90%;
+  }
+}

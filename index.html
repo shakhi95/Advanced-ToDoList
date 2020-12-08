@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <!-- icon & title -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>لیست کارها</title>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="middle">
+        <div class="title-box">
+          <h1>لیست کارها</h1>
+          <img id="mode" class="sun" src="./images/icon-moon.svg" alt="" />
+        </div>
+        <form class="input-box">
+          <input
+            id="input"
+            type="text"
+            placeholder="عنوان کار را وارد کنید..."
+          />
+          <input type="submit" value="اضافه کن!" />
+        </form>
+        <div class="mssg">پیام جعلی است</div>
+        <div class="tasks-box">
+          <div class="group">
+            نمایش :
+            <small id="all" class="active">همه</small>-
+            <small id="left">انجام نشده ها</small>-
+            <small id="done">انجام شده ها</small>
+          </div>
+          <div class="info">
+            <div>
+              <small id="tasks-num">0</small><small> کار باقی مانده </small>
+            </div>
+            <div><small id="clear-tasks">پاک کردن همه</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
