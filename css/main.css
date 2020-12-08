@@ -77,7 +77,7 @@ body {
   padding: 0.8rem;
   border-radius: 5px;
 
-  border: 1px solid whitesmoke;
+  border: 1px solid rgb(189, 189, 189);
 
   display: flex;
   justify-content: center;
@@ -98,11 +98,10 @@ body {
   font-family: "IranSans";
   text-align: center;
   width: 20%;
-  height: 20%;
   outline: none;
   border: none;
   background-color: white;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(131, 131, 131);
   cursor: pointer;
 }
 
@@ -240,10 +239,22 @@ body {
   .middle {
     width: 70%;
   }
+
+  .middle .input-box input[type="submit"] {
+    border-right: none;
+  }
 }
 
 @media (max-width: 400px) {
   .middle {
     width: 90%;
+    margin-top: 5%;
+  }
+  .middle .input-box input[type="text"] {
+    width: 70%;
+  }
+
+  .middle .input-box input[type="submit"] {
+    width: 30%;
   }
 }
